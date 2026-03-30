@@ -1,7 +1,7 @@
 # Hi 👋, I'm Abhishek Gupta
 
 ## 🚀 About Me
-- 🎓 BA Student (History)
+- 🎓 BA Student Liberal Arts and Sciences/Liberal Studies
 - 💻 Learning Python & Data Analysis
 - 📊 Interested in Data Analyst role
 
