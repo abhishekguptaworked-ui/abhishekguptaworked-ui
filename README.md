@@ -1,16 +1,19 @@
-## Hi there 👋
+# Hi 👋, I'm Abhishek Gupta
 
-<!--
-**abhishekguptaworked-ui/abhishekguptaworked-ui** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 🚀 About Me
+- 🎓 BA Student (History)
+- 💻 Learning Python & Data Analysis
+- 📊 Interested in Data Analyst role
 
-Here are some ideas to get you started:
+## 🛠 Skills
+- Python
+- Excel
+- SQL
+- Power Bi
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 📈 Goals
+- Become Data Analyst
+- Build Projects
+
+## 📫 Contact
+- Email: abhishekguptaworked@gmail.com
