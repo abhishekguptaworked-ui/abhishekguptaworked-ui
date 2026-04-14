@@ -13,3 +13,27 @@ I love turning raw data into meaningful insights 💡 and constantly improving m
   <img alt="Communication" src="https://img.shields.io/badge/Communication-009688?style=flat-square&logo=slack&logoColor=white" />
   <img alt="Time Management" src="https://img.shields.io/badge/Time_Management-795548?style=flat-square&logo=clockify&logoColor=white" />
 </p>
+
+<div align="center">
+
+<!-- LOGO -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" width="80" alt="LeetCode Logo" />
+
+
+
+
+
+![LeetCode Stats](https://leetcard.jacoblin.cool/abhishekguptaworked-ui?theme=dark&ext=heatmap)
+
+<br/>
+
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-227-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)
+![Easy](https://img.shields.io/badge/Easy-120-4CAF50?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-85-FFA116?style=for-the-badge)
+![Hard](https://img.shields.io/badge/Hard-22-F44336?style=for-the-badge)
+
+
+![Repo](https://img.shields.io/badge/Public-Open%20Source-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-In%20Progress-blueviolet?style=for-the-badge)
+
+</div>
