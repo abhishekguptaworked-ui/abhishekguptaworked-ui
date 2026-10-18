@@ -1,0 +1,23 @@
+
+employees = {    
+    "Amit": 25000,   
+    "Rahul": 35000,   
+    "Priya": 45000,  
+    "Neha": 40000
+    }
+
+# Task:
+# - max() use karke highest salary wale employee ka naam find karo.
+# - Us employee ka naam aur salary print karo.
+# Expected output:
+# Highest-paid employee: Priya
+# Salary: 45000'''
+
+
+# highest = max(employees, key=employees.get)
+
+# print(f"Highest-paid employee: {highest}")
+# print(f"Salary: {employees[highest]}")
+
+highest = max(employees, key=employees.get)
+print(highest,employees[highest])
