@@ -1,0 +1,17 @@
+salaries = [25000, 35000, 45000, 28000, 50000]
+# Task:
+# 1. Sirf ₹30,000 se zyada salaries select kar.
+# 2. Har selected salary mein ₹2,000 add kar.
+# 3. Final result ko list mein store karke print kar.
+# Expected output:
+# [37000, 47000, 52000]
+
+reuslt  = list(
+    map(
+        lambda salary : salary + 2000,
+        filter(lambda salary : salary > 30000 , salaries )
+
+    )
+)
+
+print(reuslt)
