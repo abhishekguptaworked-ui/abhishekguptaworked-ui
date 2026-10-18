@@ -1,0 +1,18 @@
+
+# Ab ek chhota sa practical. Is baar sorted() use karna hai.
+employees = [
+    ["Amit", 25000],
+    ["Rahul", 35000],
+    ["Priya", 45000]
+]
+
+# Task: Employees ko salary ke basis par ascending order (lowest to highest) mein sort karo aur result print karo.
+# Outout 
+# [
+#     ["Amit", 25000],
+#     ["Rahul", 35000],
+#     ["Priya", 45000]
+# ]
+
+result  = sorted(employees, key=lambda emp: emp[0])
+print(result)
