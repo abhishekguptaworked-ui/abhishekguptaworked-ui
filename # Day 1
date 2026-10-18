@@ -1,0 +1,10 @@
+# Task: Neeche di gayi salaries mein se sirf ₹30,000 se zyada salaries
+#  ki ek new list banao aur print karo.
+
+salaries = [25000, 35000, 45000, 28000, 50000]
+
+result = (
+    list(filter(lambda salary : salary >30000,salaries))
+)
+
+print(result)
