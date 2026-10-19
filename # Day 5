@@ -1,0 +1,12 @@
+Task: countup(number) naam ka function banao jo 1 se lekar diye gaye number tak counting print kare.
+# Expected output, jab countup(4) call karo:
+
+
+def countup(number):
+    if number == 0:   #--------------------------3rd
+        print("done") #------------------------4th Last print
+        return
+    print(number)  #-----------------------1st
+    countup(number - 1) #--------------------2nd
+
+countup(4) #- ---- Input 
