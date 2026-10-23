@@ -1,0 +1,123 @@
+# CSV files
+
+# theory
+# CSV file ko simple spreadsheet samajh, jisme rows aur columns hote hain.
+# Data Engineer ko CSV se data read karna, clean karna aur database ya pipeline
+# mein load karna hota hai.
+
+# import csv
+# with open("employees.csv","r",newline="") as file:
+#     reader = csv.DictReader(file)
+
+
+#     for employees in reader:
+#         print(employees["name"],employees["salary"])
+
+
+# -------------------------------------------------------------------
+# reading 
+
+# import csv
+
+# with open("employees.csv", "r", newline="") as file:
+#     reader = csv.reader(file)
+
+#     for employee in reader:
+#           print(employee[0],employee[1],employee[2])
+
+# --------------------------------------------------------------------------
+# filteration (if condition)
+
+# import csv
+
+# with open("employees.csv", "r", newline="") as file:
+#     reader = csv.reader(file)
+
+#     for employee in reader:
+#         if employee[2].strip().lower() == "human resource":
+#           print(employee[0],employee[1],employee[2])
+
+# -------------------------------------------------------------------------------
+
+# import csv
+
+# total_salary = 0
+
+# with open("employees.csv","r",newline="") as file:
+#     reader = csv.reader(file)
+
+
+#     for employees in reader :
+#         if employees[2].strip().lower() == "human resource":
+#             salary = float(employees[1])
+#             total_salary += salary
+#             print("Total Salary :",total_salary)
+          
+# ------------------------------------------------------------------------------
+# Lesson 2 — CSV data cleaning and validation
+
+# cleaning the Data (space and upper lower etc )
+
+# import csv
+
+# with open ("employees.csv","r",newline="") as file:
+#     reader = csv.reader(file)
+
+
+#     for emoloyees in reader:
+#         name  = emoloyees[0].strip().title()
+#         salary = float(emoloyees[1])
+#         post = emoloyees[2].strip().title()
+#         location = emoloyees[3].strip().title()
+
+#         print(name,salary,post,location)
+# -----------------------------------------------------------------
+# Invalid value erro hanlding when valeu in texted
+import csv
+salary_text = "Text Etc"
+with open ("employees.csv","r",newline="") as file:
+     reader  =  csv.reader(file)
+
+
+     for emoloyees in reader:
+        try:
+            name = emoloyees[0].strip().lower()
+            salary = float(emoloyees[1])
+            post = emoloyees[2].strip().lower()
+            location = emoloyees[3].strip().lower()
+            print(name,salary,post,location)
+
+        except ValueError :
+            print("invalid valeu",salary_text)
+#----------------------------------------------------------
+
+# CSV mein missing data
+
+# employees = ["Abhishek","",20]
+
+# if employees[1] == "":
+#     print("Saalry Missing")
+
+import csv
+
+
+with open ("employees.csv","r",newline="") as file:
+    reader = csv.reader(file)
+
+    for employees in reader:
+        try:
+            Name  = employees[0].strip().lower()
+            Salary = float(employees[1])
+            post = employees[2].strip().lower()
+            location = employees[3].strip().lower()
+
+            if Salary  =="":
+                print("Missing Value",Name)
+                continue
+            salary  = float(employees[1])
+
+
+            print(Name,salary,post,location)
+        except ValueError :
+         print("Salary Invalid Type",employees)
+        
