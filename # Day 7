@@ -1,0 +1,151 @@
+Duplicate employee records identify
+
+# employees = ["Amit", "Rahul", "Amit", "Priya"]
+
+# seen = set()
+
+# for name in employees:
+#     if name  in seen:
+#         print("Dublicate",name)
+
+#     else :
+#         seen.add(name)
+
+
+
+
+import csv
+
+seen  = set()
+
+with open ("employees.csv","r",newline="") as file:
+    reader  = csv.reader(file)
+
+    for employees in reader :
+        try :
+            name = employees[0].strip()
+            salary_text = employees[1]
+            post = employees[2].strip()
+            location = employees[3].strip()
+
+
+            if salary_text == "":
+                print(repr("Missing Salary",employees))
+                continue
+
+            salary = float(salary_text)
+
+            if salary <= 0 :
+                print("valid Saalry",employees)
+                continue
+
+            records = (name,salary,post,location)
+
+            if records in seen:
+                print("Dublicate Records:",records)
+                continue
+
+            seen.add(records)
+            print("valid Recodrs:",records)
+
+        except (ValueError ,IndexError) : 
+            print("Invalid Records:",employees)
+--------------------------------------------------------------------------------------
+
+
+# Next step: Duplicate ko count karna
+
+name = ["Abhishek","Manisha","Muskan","Roshni","Abhishek"]
+
+seen = set()
+
+index_Add = 0
+
+for emp in name : 
+    if emp in seen:
+        index_Add =+ 1
+        print("Dublicates",emp)
+    else : 
+        seen.add(emp)
+print("total Dublicates",index_Add)
+
+
+---------------------------------------------------------------------------------------
+
+
+import csv
+
+seen = set()
+duplicate_count = 0
+
+with open("employees.csv", "r", newline="") as file:
+    reader = csv.reader(file)
+
+    for employee in reader:
+        try:
+            name = employee[0].strip()
+            salary = float(employee[1])
+            post = employee[2].strip()
+            location = employee[3].strip()
+
+            record = (name, salary, post, location)
+
+            if record in seen:
+                duplicate_count += 1
+                print("Duplicate:", record)
+            else:
+                seen.add(record)
+
+        except (ValueError, IndexError):
+            print("Invalid row:", employee)
+
+print("Total duplicate occurrences:", duplicate_count)
+
+------------------------------------------------------------------
+ Next step: CSV cleaning ka practical task
+# Ab hum tumhari Data Engineering roadmap mein ek important rule add karenge:
+# invalid rows ko skip karna aur valid rows ko count karna.
+
+# import csv
+
+# valid = 0
+# invalid = 0
+
+
+# with open ("employees.csv","r",newline="") as file:
+#     reader = csv.reader(file)
+
+#     for employees  in reader :
+#         try :
+#             name = employees[0].strip()
+#             salary_text = employees[1]
+#             post  = employees[2].strip()
+#             location = employees[3].strip()
+
+#             if name == "" or salary_text == "":
+#                 invalid += 1
+#                 continue
+
+#             salary = float(salary_text)
+
+#             if salary < 0 :
+#                 invalid += 0 
+#                 continue
+ 
+#             valid += 1
+
+#             print(name,salary,post,location)
+
+#         except (ValueError,IndexError):
+#             invalid += 1
+#             print("Invalid Record:",name,post)
+
+# print("valid Records:",valid)
+# print("Invalid Records:",invalid)
+---------------------------------------------------------------------
+
+
+
+
+
+
